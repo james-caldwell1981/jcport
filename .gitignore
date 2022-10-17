@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#Frontend turn-key HTML Templates
+html5up-dimension-template
+
+# PyCharm
+.idea/
