@@ -1667,3 +1667,10 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+
+/* Custom CSS not included in the template */
+#Intro, #Projects, #About{
+	overflow-y: scroll;
+	overflow-wrap: normal;
+}
