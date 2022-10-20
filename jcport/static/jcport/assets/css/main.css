@@ -1674,3 +1674,28 @@ input, select, textarea {
 	overflow-y: scroll;
 	overflow-wrap: normal;
 }
+	.challenge_cards{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+.card{
+	margin:20px;
+	padding: 10px;
+	max-width: 185px;
+	min-height: 300px;
+	overflow-y: clip;
+	border: solid rgba(99%, 99%, 99%, 50%) 1px;
+	border-radius: 5px;
+}
+	.card_heading{
+		display: inline-block;
+		text-align: center;
+		min-width: 100%;
+		font-weight: bold;
+		font-variant-caps: small-caps;
+		border-bottom: solid rgba(99%, 99%, 99%, 50%) 1px;
+		background-color: rgba(86%, 86%, 86%, 10%);
+	}
