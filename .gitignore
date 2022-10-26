@@ -139,3 +139,6 @@ static/
 
 # settings - ignore to keep from overwriting remote versions
 website/settings.py
+
+# coverage.py html reporting
+htmlcov
