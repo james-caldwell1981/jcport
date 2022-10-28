@@ -142,3 +142,6 @@ website/settings.py
 
 # coverage.py html reporting
 htmlcov
+
+# Django migrations
+jcport/migrations
