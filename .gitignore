@@ -135,7 +135,7 @@ html5up-dimension-template
 .idea/
 
 # static - this folder ignored to avoid merge conflicts due to it's dynamic nature
-website/static/
+jcport/static/
 
 # settings - ignore to keep from overwriting remote versions
 website/settings.py
