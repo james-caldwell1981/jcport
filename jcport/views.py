@@ -1,4 +1,3 @@
-from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponse
 from django.template import loader
 from . models import Page
@@ -10,14 +9,16 @@ def landing(request):
     context = {}
 
     for page in pages:
-        context[page.page_name] = page
-
-
+        context[page.page_name] = page # pragma: no cover
 
     template = loader.get_template('jcport/index.html')
 
     return HttpResponse(template.render(context, request))
 
 
-def contact(request):
+def challenge(request):
     pass
+
+
+def contact(request):
+    pass # pragma: no cover
