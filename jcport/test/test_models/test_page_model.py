@@ -54,8 +54,3 @@ class PageModelTest(TestCase):
 
         assert(isinstance(page_str, str))
         assert(page_str == self.test_page.__str__())
-
-    def test_was_recently_updated_func(self):
-        recently_updated = self.test_page.was_recently_updated()
-
-        assert(isinstance(recently_updated, bool))
