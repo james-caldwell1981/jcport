@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.utils.translation import gettext_lazy as _
 
 # Create your models here.
 
@@ -12,7 +12,7 @@ class Page(models.Model):
     published = models.BooleanField(default=False)
 
     class PageTypes(models.TextChoices):
-        challenge = 'main', _('Main')
+        main = 'main', _('Main')
         challenge = 'challenge', _('Challenge')
 
     page_type = models.CharField(
@@ -20,6 +20,9 @@ class Page(models.Model):
         choices=PageTypes.choices,
         default=PageTypes.main
     )
+
+    def __str__(self):
+        return f'{self.page_name}_Page'
 
 
 class Challenges(Page):
