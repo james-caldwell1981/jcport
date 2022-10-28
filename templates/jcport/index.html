@@ -49,7 +49,6 @@
 						<!-- Intro -->
 							<article id="Intro">
 								<h2 class="major">Intro</h2>
-								<!--<span class="image main"><img src="{% static 'jcport/images/pic01.jpg' %}" alt="" /></span>-->
                                 <p>{{ Intro.page_overview }}</p>
                                 <p>{{ Intro.page_body_text|safe }}</p>
 							</article>
@@ -57,9 +56,8 @@
 						<!-- Work -->
 							<article id="challenges">
 								<h2 class="major">Challenges</h2>
-								<span class="image main"><img src="jcport/images/pic02.jpg" alt="" /></span>
-                                <p>{{ Projects.page_overview }}</p>
-                                <p>{{ Projects.page_body_text|safe }}</p>
+                                <p>{{ Challenges.page_overview }}</p>
+                                <p>{{ Challenges.page_body_text|safe }}</p>
 
                                 <div class="challenge_cards">
                                     <div class="card">
@@ -98,7 +96,6 @@
 						<!-- About -->
 							<article id="about">
 								<h2 class="major">About</h2>
-								<span class="image main"><img src="jcport/images/pic03.jpg" alt="" /></span>
                                 <p>{{ About.page_overview }}</p>
                                 <p>{{ About.page_body_text }}</p>
 							</article>
