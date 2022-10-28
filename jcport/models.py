@@ -11,8 +11,15 @@ class Page(models.Model):
     page_body_text = models.TextField(max_length=5000)
     published = models.BooleanField(default=False)
 
-    def __str__(self):
-        return f'{self.page_name}_Page'
+    class PageTypes(models.TextChoices):
+        challenge = 'main', _('Main')
+        challenge = 'challenge', _('Challenge')
+
+    page_type = models.CharField(
+        max_length=10,
+        choices=PageTypes.choices,
+        default=PageTypes.main
+    )
 
 
 class Challenges(Page):
